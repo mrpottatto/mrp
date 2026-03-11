@@ -62,7 +62,8 @@ bot.start((ctx) => {
         'Команды:\n' +
         '/start - показать это сообщение\n' +
         '/game - начать новую игру\n' +
-        '/stop - закончить игру',
+        '/stop - закончить игру'\n +
+        'чтобы ходы зачитывались отвечай на мои сообщения!',
         { parse_mode: 'Markdown' }
     );
 });
@@ -194,4 +195,5 @@ bot.launch()
     });
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
+
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
