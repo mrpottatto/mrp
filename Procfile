@@ -1,1 +1,1 @@
-worker: node slova.js
+worker: node bot.js
